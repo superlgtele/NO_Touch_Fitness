@@ -1,6 +1,6 @@
 const express  = require('express');
 const router = express.Router();
-const Post = require('../models/Post');
+var Post = require('../models/Post');
 
 // Index
 // sort()함수는 string이나 object를 받아서 데이터 정렬방법을 정의 
