@@ -25,6 +25,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 // Routes
 app.use('/', require('./routes/home'));
 app.use('/posts', require('./routes/posts'));
+app.use('/users', require('./routes/users'));
 
 // Port setting
 const port = 3000;
