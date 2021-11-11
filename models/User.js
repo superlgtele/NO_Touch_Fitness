@@ -18,6 +18,7 @@ const userSchema = mongoose.Schema({
   name:{
     type:String,
     required:[true,'이름을 입력해주세요!'],
+    // match:[/^.{4,12}$/,'4글자이상, 12글자이하만 가능합니다!'],
     trim:true
   },
   email:{
