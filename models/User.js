@@ -3,10 +3,28 @@ const bcrypt = require('bcryptjs');
 
 // schema // 1
 const userSchema = mongoose.Schema({
-  username:{type:String, required:[true,'ID를 입력해주세요!'], unique:true},
-  password:{type:String, required:[true,'비밀번호를 입력해주세요!'], select:false},
-  name:{type:String, required:[true,'이름을 입력해주세요!']},
-  email:{type:String}
+  username:{
+    type:String,
+    required:[true,'ID를 입력해주세요!'],
+    match:[/^.{4,12}$/,'4글자이상, 12글자이하만 가능합니다!'],
+    trim:true,
+    unique:true
+  },
+  password:{
+    type:String,
+    required:[true,'비밀번호를 입력해주세요!'],
+    select:false
+  },
+  name:{
+    type:String,
+    required:[true,'이름을 입력해주세요!'],
+    trim:true
+  },
+  email:{
+    type:String,
+    match:[/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,'이메일 형식에 맞게 작성해주세요!'],
+    trim:true
+  }
 },{
   toObject:{virtuals:true}
 });
@@ -28,42 +46,51 @@ userSchema.virtual('newPassword')
   .get(function(){ return this._newPassword; })
   .set(function(value){ this._newPassword=value; });
 
-// password validation // 3
+// password validation
+var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,16}$/;
+var passwordRegexErrorMessage = '알파벳과 숫자가 포함된 8자이상, 16자이하의 비밀번호작성이 가능합니다!';
 userSchema.path('password').validate(function(v) {
   var user = this; // 3-1
 
-  // create user // 3-3
-  if(user.isNew){ // 3-2
+  // create user
+  if(user.isNew){
     if(!user.passwordConfirmation){
       user.invalidate('passwordConfirmation', '비밀번호 확인이 필요합니다!');
     }
 
-    if(user.password !== user.passwordConfirmation) {
-      user.invalidate('passwordConfirmation', '비밀번호가 맞지 않습니다!');
+    if(!passwordRegex.test(user.password)){
+      user.invalidate('password', passwordRegexErrorMessage);
+    }
+    else if(user.password !== user.passwordConfirmation) {
+      user.invalidate('passwordConfirmation', '비밀번호가 틀렸습니다!');
     }
   }
 
-  // update user // 3-4
+  // update user
   if(!user.isNew){
     if(!user.currentPassword){
       user.invalidate('currentPassword', 'Current Password is required!');
     }
-    else if(user.currentPassword != user.originalPassword){
+    else if(!bcrypt.compareSync(user.currentPassword, user.originalPassword)){
       user.invalidate('currentPassword', 'Current Password is invalid!');
     }
 
-    if(user.newPassword !== user.passwordConfirmation) {
-      user.invalidate('passwordConfirmation', 'Password Confirmation does not matched!');
+    if(user.newPassword && !passwordRegex.test(user.newPassword)){
+      user.invalidate("newPassword", passwordRegexErrorMessage);
+    }
+    else if(user.newPassword !== user.passwordConfirmation) {
+      user.invalidate('passwordConfirmation', '비밀번호가 틀렸습니다!');
     }
   }
 });
 
 // hash password
-userSchema.pre('save', function (next) {
+userSchema.pre('save', function (next){
   var user = this;
-  if(!user.isModified('password')) {
+  if(!user.isModified('password')){
     return next();
-  } else {
+  }
+  else {
     user.password = bcrypt.hashSync(user.password);
     return next();
   }
@@ -72,7 +99,7 @@ userSchema.pre('save', function (next) {
 // model methods
 userSchema.methods.authenticate = function (password) {
   var user = this;
-  return bcrypt.compareSync(password, user.password);
+  return bcrypt.compareSync(password,user.password);
 };
 
 // model & export
