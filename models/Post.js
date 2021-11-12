@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
 // schema
-const postSchema = mongoose.Schema({
+var postSchema = mongoose.Schema({
   title:{type:String, required:[true,'제목을 입력해주세요!']},
   body:{type:String, required:[true,'내용을 입력해주세요!']},
   author:{type:mongoose.Schema.Types.ObjectId, ref:'user', required:true},
@@ -10,5 +10,5 @@ const postSchema = mongoose.Schema({
 });
 
 // model & export
-const Post = mongoose.model('post', postSchema);
+var Post = mongoose.model('post', postSchema);
 module.exports = Post;
