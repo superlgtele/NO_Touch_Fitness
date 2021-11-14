@@ -6,14 +6,12 @@
   <body>
     <%- include('../partials/nav') %>
 
-    <div class="container mb-3">
-
-      <h3 class="mb-3">Edit User</h3>
+    <div class="container p-5">
 
       <form action="/users/<%= username %>?_method=put" method="post">
 
         <div class="form-group row">
-          <label for="currentPassword" class="col-sm-3 col-form-label">Current Password*</label>
+          <label for="currentPassword" class="col-sm-3 col-form-label">Current Password</label>
           <div class="col-sm-9 col-sm-offset-3">
             <input type="password" id="currentPassword" name="currentPassword" value="" class="form-control <%= (errors.currentPassword)?'is-invalid':'' %>">
             <% if(errors.currentPassword){ %>
@@ -25,7 +23,7 @@
         <hr></hr>
 
         <div class="form-group row">
-          <label for="username" class="col-sm-3 col-form-label">Username*</label>
+          <label for="username" class="col-sm-3 col-form-label">Username</label>
           <div class="col-sm-9">
             <input type="text" id="username" name="username" value="<%= user.username %>" class="form-control <%= (errors.username)?'is-invalid':'' %>">
             <% if(errors.username){ %>
@@ -35,7 +33,7 @@
         </div>
 
         <div class="form-group row">
-          <label for="name" class="col-sm-3 col-form-label">Name*</label>
+          <label for="name" class="col-sm-3 col-form-label">Name</label>
           <div class="col-sm-9">
             <input type="text" id="name" name="name" value="<%= user.name %>" class="form-control <%= (errors.name)?'is-invalid':'' %>">
             <% if(errors.name){ %>
@@ -74,10 +72,6 @@
           </div>
         </div>
 
-        <p>
-          <small>*Required</small>
-        </p>
-
         <% if(errors.unhandled){ %>
           <div class="alert alert-danger">
             <%= errors.unhandled %>
@@ -85,8 +79,8 @@
         <% } %>
 
         <div class="buttons">
-          <a class="btn btn-primary" href="/users/<%= username %>">Back</a>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <a class="btn btn-dark" href="/users/<%= username %>">Back</a>
+          <button type="submit" class="btn btn-dark">Submit</button>
         </div>
 
       </form>

@@ -6,9 +6,7 @@
   <body>
     <%- include('../partials/nav') %>
 
-    <div class="container mb-3">
-
-      <h3 class="contentBoxTop"><%= user.username %></h3>
+    <div class="container p-5">
 
       <form class="user-form" action="/users" method="post">
         <fieldset disabled>
@@ -29,7 +27,7 @@
 
       <div>
         <% if(isAuthenticated && currentUser.id == user.id){ %>
-          <a class="btn btn-primary" href="/users/<%= user.username %>/edit">Edit</a>
+          <a class="btn btn-dark" href="/users/<%= user.username %>/edit">Edit</a>
         <% } %>
       </div>
 
