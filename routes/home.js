@@ -7,9 +7,9 @@ router.get('/', function(req, res){
   res.render('home/welcome');
 });
 
-// router.get('/about', function(req, res){
-//   res.render('home/about');
-// });
+router.get('/onlinept', function(req, res){
+  res.render('home/first');
+});
 
 // Login
 router.get('/login', function (req,res) {
