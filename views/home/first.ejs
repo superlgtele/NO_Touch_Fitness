@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/first.css">
+    <%- include('../partials/head') %>
   </head>
   <body>
-    <ul class="cards">
+    <%- include('../partials/nav') %>
+
+    <ul class="cardss">
       <li>
-        <a href="" class="card">
-          <img src="/imgs/a1.png" class="card__image" alt="A1" />
-          <div class="card__overlay">
-            <div class="card__header">                    
-              <img class="card__thumb" src="/imgs/b1.png" alt="B1" />
-              <div class="card__header-text">
-                <h3 class="card__title">필라테스</h3>            
-                <span class="card__status">홈 트레이닝</span>
+        <a href="" class="cards">
+          <img src="/imgs/a1.png" class="cards__image" alt="A1" />
+          <div class="cards__overlay">
+            <div class="cards__header">                    
+              <img class="cards__thumb" src="/imgs/b1.png" alt="B1" />
+              <div class="cards__header-text">
+                <h3 class="cards__title">필라테스</h3>            
+                <span class="cards__status">홈 트레이닝</span>
               </div>
             </div>
             
@@ -33,7 +36,7 @@
               <span class='remaining'>
                       남은 자리:
                   <i class='commify'>
-                      10
+                      1
                   </i>
               </span>
           </div>
@@ -42,47 +45,107 @@
         </a>      
       </li>
       <li>
-        <a href="" class="card">
-          <img src="/imgs/a2.png" class="card__image" alt="A2" />
-          <div class="card__overlay">        
-            <div class="card__header">                
-              <img class="card__thumb" src="/imgs/b2.png" alt="B2" />
-              <div class="card__header-text">
-                <h3 class="card__title">스쿼트</h3>
-                <span class="card__status">홈 트레이닝</span>
+        <a href="" class="cards">
+          <img src="/imgs/a2.png" class="cards__image" alt="A2" />
+          <div class="cards__overlay">        
+            <div class="cards__header">                
+              <img class="cards__thumb" src="/imgs/b2.png" alt="B2" />
+              <div class="cards__header-text">
+                <h3 class="cards__title">스쿼트</h3>
+                <span class="cards__status">홈 트레이닝</span>
               </div>
             </div>
-            <p class="card__description">카드 안에 내용을 넣어야함</p>
+            
+            <div class="price">
+              <del>
+                  <i class="commify">
+                      90,000원
+                  </i>
+              </del>
+                   <b>50% off</b>
+              <div class='strong'>
+                  <i class="commify">
+                      45,000원
+                  </i>
+              </div>
+              <span class='remaining'>
+                      남은 자리:
+                  <i class='commify'>
+                      2
+                  </i>
+              </span>
+          </div>
+
           </div>
         </a>
       </li>
       <li>
-        <a href="" class="card">
-          <img src="/imgs/a3.png" class="card__image" alt="A3" />
-          <div class="card__overlay">
-            <div class="card__header">                    
-              <img class="card__thumb" src="/imgs/b3.png" alt="B3" />
-              <div class="card__header-text">
-                <h3 class="card__title">턱걸이</h3>           
-                <span class="card__status">맨몸운동</span>
+        <a href="" class="cards">
+          <img src="/imgs/a3.png" class="cards__image" alt="A3" />
+          <div class="cards__overlay">
+            <div class="cards__header">                    
+              <img class="cards__thumb" src="/imgs/b3.png" alt="B3" />
+              <div class="cards__header-text">
+                <h3 class="cards__title">턱걸이</h3>           
+                <span class="cards__status">맨몸운동</span>
               </div>
             </div>
-            <p class="card__description">카드 안에 내용을 넣어야함</p>
+            
+            <div class="price">
+              <del>
+                  <i class="commify">
+                      70,000원
+                  </i>
+              </del>
+                   <b>50% off</b>
+              <div class='strong'>
+                  <i class="commify">
+                      35,000원
+                  </i>
+              </div>
+              <span class='remaining'>
+                      남은 자리:
+                  <i class='commify'>
+                      6
+                  </i>
+              </span>
+          </div>
+
           </div>
         </a>
       </li>
       <li>
-        <a href="" class="card">
-          <img src="/imgs/a4.png" class="card__image" alt="A4" />
-          <div class="card__overlay">
-            <div class="card__header">                
-              <img class="card__thumb" src="/imgs/b3.png" alt="B3" />
-              <div class="card__header-text">
-                <h3 class="card__title">벤치 프레스</h3>
-                <span class="card__status">웨이트 트레이닝</span>
+        <a href="" class="cards">
+          <img src="/imgs/a4.png" class="cards__image" alt="A4" />
+          <div class="cards__overlay">
+            <div class="cards__header">                
+              <img class="cards__thumb" src="/imgs/b3.png" alt="B3" />
+              <div class="cards__header-text">
+                <h3 class="cards__title">벤치 프레스</h3>
+                <span class="cards__status">웨이트 트레이닝</span>
               </div>          
             </div>
-            <p class="card__description">카드 안에 내용을 넣어야함</p>
+            
+            <div class="price">
+              <del>
+                  <i class="commify">
+                      80,000원
+                  </i>
+              </del>
+                   <b>50% off</b>
+              <div class='strong'>
+                  <i class="commify">
+                      40,000원
+                  </i>
+              </div>
+              <span class='remaining'>
+                      남은 자리:
+                  <i class='commify'>
+                      4
+                  </i>
+              </span>
+          </div>
+
           </div>
         </a>
       </li>    
