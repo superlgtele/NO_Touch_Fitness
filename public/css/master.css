@@ -71,3 +71,41 @@ body {
   padding: 140px;
   color: black;
 }
+
+/* .rowbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.thumHolder {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  text-decoration: none;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+  min-height: 396px;
+}
+
+.col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-lg-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xl-3 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+} */
