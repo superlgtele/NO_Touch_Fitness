@@ -11,6 +11,10 @@ router.get('/onlinept', function(req, res){
   res.render('home/first');
 });
 
+router.get('/onlinept/one', function(req, res){
+  res.render('home/firstone');
+});
+
 // Login
 router.get('/login', function (req,res) {
   var username = req.flash('username')[0];
