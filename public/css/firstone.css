@@ -1,0 +1,12 @@
+.previewImgsHead {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+}
+
+.col-lg-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
