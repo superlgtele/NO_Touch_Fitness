@@ -5,12 +5,51 @@
     <link rel="stylesheet" href="/css/firstone.css">
     <%- include('../partials/head') %>
   </head>
-  <body>
+
+<body>
     <%- include('../partials/nav') %>
-    <div class="col-lg-8">
-    <img src="/imgs/a5.png" class="previewImgsHead" alt="A5" />
+    
+    <img src="/imgs/a5.png" alt="A5" />
+    
+  <div class="row justify-content-between">
+    
+    <div class="col-lg-7 programDetailBox">
+      <div class="programTitleBox">
+        <h4 class="evade">필라테스</h4>
+        <h3 id="text-class-title">필라테스와 친해지기</h3>
+      </div>
     </div>
-  </body>
+
+    <div class="col-lg-4">
+      <div class="programHeader">
+        <div class="box price">
+
+          <div class="discountedPrice">
+            <strong>할인가</strong>
+              <em class="discountRate">50%</em>
+                <span class="price">
+                  <span class="commify">50,000</span>
+                    <small>원</small>
+                  </span>
+          <del class="orgPrice commify">100,000</del>
+          </div>
+        
+        <div class="remaining">
+          <span class="remain">
+            남은자리 :
+              <span class="commify">0</span>
+          </span>
+        </div>
+
+        <a class="btnPurchase" href="#">신청하기</a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
 </html>
 
 
