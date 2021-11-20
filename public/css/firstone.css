@@ -118,3 +118,14 @@ h4.evade {
   font-size: 36px;
   margin-bottom: 0;
 }
+
+.programTitleBox .meta {
+  font-size: 14px;
+}
+
+.programTitleBox .meta em {
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 10px;
+  color: #174c88;
+}
