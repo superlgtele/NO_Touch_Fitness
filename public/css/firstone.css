@@ -111,7 +111,7 @@ body {
 h4.evade {
   font-size: 14px;
   font-weight: 600;
-  color: #888;
+  color: rgb(110, 76, 189);
 }
 
 .programTitleBox h3 {
@@ -128,4 +128,61 @@ h4.evade {
   font-weight: 700;
   margin-right: 10px;
   color: #174c88;
+}
+
+.programDetailBox .provide {
+  margin: 100px 0 50px;
+}
+
+.programDetailBox .provide .provideItem {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.programDetailBox .provide .provideItem img {
+  width: 80px;
+  height: 80px;
+}
+
+/* img {
+  object-fit: cover;
+  vertical-align: middle;
+  border-style: none;
+} */
+
+.programDetailBox .provide .provideItem strong {
+  color: #123;
+  font-size: 16px;
+  font-family: Cafe24Ohsquare;
+  display: block;
+  margin: 10px 0;
+  line-height: 1;
+}
+
+.programDetailBox .provide .provideItem small {
+  font-size: 12px;
+  color: rgb(18, 133, 47);
+  display: block;
+  line-height: 1.4;
+}
+
+.programDetailBox .provide .provideItem small span {
+  display: block;
+}
+
+.programDetailBox .provide h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #174c88;
+  margin: 0 0 15px;
+  margin-block-start: -1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 30px;
+  margin-inline-end: -105px;
+  display: block;
 }
