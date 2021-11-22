@@ -9,6 +9,21 @@ body {
   box-sizing: border-box;
 } */
 
+.containers {
+  max-width: 600px;
+  max-height: 350px;
+  display: flex;
+  gap: 20px;
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0004);
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+
 .justify-content-between {
   justify-content: space-between !important;
 }
