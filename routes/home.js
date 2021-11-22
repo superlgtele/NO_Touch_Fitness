@@ -11,7 +11,7 @@ router.get('/onlinept', function(req, res){
   res.render('home/first');
 });
 
-router.get('/onlinept/one', function(req, res){
+router.get('/onlinept/practice', function(req, res){
   res.render('home/firstone');
 });
 
