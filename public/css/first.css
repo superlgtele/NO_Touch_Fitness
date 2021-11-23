@@ -45,6 +45,7 @@ body {
   background-color: var(--surface-color);
   transform: translateY(100%);
   transition: 0.2s ease-in-out;
+  opacity: 0.8;
 }
 
 .cards:hover .cards__overlay {
