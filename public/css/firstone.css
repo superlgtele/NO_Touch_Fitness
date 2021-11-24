@@ -1,15 +1,9 @@
 body {
   font: 14px/1.6 "Pretendard", "Apple SD Gothic Neo", "맑은 고딕",
     "Malgun Gothic", Helvetica, Arial, sans-serif;
-  color: #444;
 }
 
-/* .div {
-  display: block;
-  box-sizing: border-box;
-} */
-
-.containers {
+/* .containers {
   max-width: 700px;
   max-height: 500px;
   display: flex;
@@ -39,119 +33,41 @@ body {
 .containers img:hover {
   transform: perspective(800px) rotateY(0deg);
   opacity: 1;
+} */
+
+.programDetailBox {
+  order: -1;
 }
 
-.provideItem {
-  position: relative;
-  top: 150px;
-  left: 90px;
-}
-
-.justify-content-between {
-  justify-content: space-between !important;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.programHeader {
-  position: relative;
-  top: 300px;
-  left: -50px;
-}
-
-.programHeader .price {
-  margin-top: 10px;
-}
-
-.programHeader .box {
-  border: 1px solid #eee;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
-  border-radius: 4px;
-  margin: 0 0 20px;
-  padding: 30px;
-}
-
-.programHeader .price .discountedPrice strong {
+.col-lg-7 {
   display: block;
-}
-
-.programHeader .price strong {
-  font-size: 12px;
-  font-weight: 600;
-  color: #123;
-}
-
-.programHeader .price .discountedPrice .discountRate {
-  color: #e32438;
-  font-weight: 600;
-  font-size: 18px;
-  font-style: normal;
-}
-
-.programHeader .price .discountedPrice .price {
-  margin: 0 5px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #123;
-  letter-spacing: -0.5px;
-}
-
-.programHeader .price .discountedPrice .price small {
-  font-weight: 600;
-}
-
-.programHeader .price .discountedPrice .orgPrice {
-  font-size: 14px;
-  font-weight: 600;
-  color: #999;
-}
-
-.programHeader .price .remaining {
-  margin: 10px 0 20px;
-}
-
-.programHeader .price .remaining .remain {
-  background: #f5f3ff;
-  color: #7266d3;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 6px 10px;
-  line-height: 1;
-  border-radius: 3px;
-}
-
-.programHeader .price .remaining .remain span {
-  font-weight: 800;
-}
-
-.programHeader .price .btnPurchase {
-  border-radius: 4px;
-  height: 48px;
-  line-height: 48px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
-  background: #123;
-  color: #fff;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  font-weight: 800;
+  box-sizing: border-box;
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .programTitleBox {
-  position: relative;
-  top: 200px;
-  left: 100px;
+  margin: 30px 0 10px;
+  display: block;
+  box-sizing: border-box;
 }
 
 h4.evade {
   font-size: 14px;
   font-weight: 600;
-  color: rgb(110, 76, 189);
+  color: #888;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .programTitleBox h3 {
@@ -159,70 +75,18 @@ h4.evade {
   margin-bottom: 0;
 }
 
-.programTitleBox .meta {
-  font-size: 14px;
-}
-
-.programTitleBox .meta em {
-  font-style: normal;
-  font-weight: 700;
-  margin-right: 10px;
-  color: #174c88;
-}
-
-.programDetailBox .provide {
-  margin: 100px 0 50px;
-}
-
-.programDetailBox .provide .provideItem {
-  text-align: center;
-  border: 1px solid #eee;
-  border-radius: 3px;
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.programDetailBox .provide .provideItem img {
-  width: 80px;
-  height: 80px;
-}
-
-/* img {
-  object-fit: cover;
-  vertical-align: middle;
-  border-style: none;
-} */
-
-.programDetailBox .provide .provideItem strong {
+h3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   color: #123;
-  font-size: 16px;
-  font-family: Cafe24Ohsquare;
-  display: block;
-  margin: 10px 0;
-  line-height: 1;
-}
-
-.programDetailBox .provide .provideItem small {
-  font-size: 12px;
-  color: rgb(18, 133, 47);
-  display: block;
+  font-family: Cafe24Ohsquare_air;
   line-height: 1.4;
 }
 
-.programDetailBox .provide .provideItem small span {
-  display: block;
-}
-
-.programDetailBox .provide h5 {
+.programTitleBox .meta {
   font-size: 14px;
-  font-weight: 600;
-  color: #174c88;
-  margin: 0 0 15px;
-  margin-block-start: -1.67em;
-  margin-block-end: 1.67em;
-  margin-inline-start: 30px;
-  margin-inline-end: -105px;
   display: block;
 }
