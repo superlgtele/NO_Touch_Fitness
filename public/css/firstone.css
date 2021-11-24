@@ -1,6 +1,8 @@
 body {
   font: 14px/1.6 "Pretendard", "Apple SD Gothic Neo", "맑은 고딕",
     "Malgun Gothic", Helvetica, Arial, sans-serif;
+  color: #444;
+  background: #fff;
 }
 
 /* .containers {
@@ -39,21 +41,8 @@ body {
   order: -1;
 }
 
-.col-lg-7 {
-  display: block;
-  box-sizing: border-box;
-  flex: 0 0 58.33333%;
-  max-width: 58.33333%;
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .programTitleBox {
   margin: 30px 0 10px;
-  display: block;
-  box-sizing: border-box;
 }
 
 h4.evade {
@@ -76,11 +65,6 @@ h4 {
 }
 
 h3 {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   color: #123;
   font-family: Cafe24Ohsquare_air;
   line-height: 1.4;
@@ -88,5 +72,61 @@ h3 {
 
 .programTitleBox .meta {
   font-size: 14px;
+}
+
+.programTitleBox .meta em {
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 10px;
+  color: #174c88;
+}
+
+.programSummary {
+  margin: 40px 0;
+  padding: 10px 30px px;
+  border-left: 1px solid #ddd;
+}
+
+.programSummary .coach {
+  overflow: hidden;
+}
+
+.programSummary .coach img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
+  float: left;
+}
+
+.programSummary .coach strong {
+  font-size: 14px;
+  font-weight: 600;
   display: block;
+  margin-top: 10px;
+}
+
+.programSummary .coach span {
+  font-size: 12px;
+  color: #888;
+}
+
+.programSummary .summary {
+  margin: 20px 0;
+}
+
+.programSummary .summary h5 {
+  font-size: 24px;
+  font-family: Cafe24Ohsquare_air;
+  line-height: 34px;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.programSummary .summary span {
+  display: block;
+}
+
+.programSummary .summary b {
+  font-family: Cafe24Ohsquare;
 }
