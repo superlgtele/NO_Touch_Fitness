@@ -5,6 +5,22 @@ body {
   background: #fff;
 }
 
+@font-face {
+  font-family: "Cafe24Ohsquare";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BMYEONSUNG";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMYEONSUNG.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* .containers {
   max-width: 700px;
   max-height: 500px;
@@ -66,7 +82,7 @@ h4 {
 
 h3 {
   color: #123;
-  font-family: Cafe24Ohsquare_air;
+  font-family: BMYEONSUNG;
   line-height: 1.4;
 }
 
@@ -117,7 +133,7 @@ h3 {
 
 .programSummary .summary h5 {
   font-size: 24px;
-  font-family: Cafe24Ohsquare_air;
+  font-family: BMYEONSUNG;
   line-height: 34px;
   color: #111;
   margin-bottom: 30px;
@@ -129,4 +145,104 @@ h3 {
 
 .programSummary .summary b {
   font-family: Cafe24Ohsquare;
+}
+
+.programSummary .summary h6 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #111;
+}
+
+.programSummary .summary em {
+  font-style: normal;
+  color: #7266d3;
+}
+
+.programDetailBox .provide {
+  margin: 100px 0 50px;
+}
+
+.programDetailBox .provide h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #174c88;
+  margin: 0 0 15px;
+}
+
+.programDetailBox .provide .row {
+  margin: 0 -5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.programDetailBox .provide .row .col {
+  padding: 0 5px;
+}
+
+.programDetailBox .provide .provideItem {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.programDetailBox .provide .provideItem strong {
+  color: #123;
+  font-size: 16px;
+  font-family: Cafe24Ohsquare;
+  display: block;
+  margin: 10px 0;
+  line-height: 1;
+}
+
+.programDetailBox .provide .provideItem small {
+  font-size: 12px;
+  color: #888;
+  display: block;
+  line-height: 1.4;
+}
+
+.contentsWrap section {
+  padding: 40px 0 0;
+  margin: 0 0 40px;
+}
+
+.programDetailBox h6.key {
+  font-family: Cafe24Ohsquare;
+  font-size: 24px;
+  color: #111;
+}
+
+.contentsWrap .sc ul {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contentsWrap .sc ul li {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-left: 20px;
+  list-style: disc;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.contentsWrap section p {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.8;
 }
