@@ -239,6 +239,7 @@ ul {
 li {
   margin: 0;
   padding: 0;
+  /* list-style: square; */
 }
 
 .contentsWrap section p {
@@ -259,23 +260,7 @@ h4.face {
   margin-bottom: 30px;
 }
 
-.miniFAQ2 li:first-child a {
-  border: 0 none;
-}
-
-.miniFAQ2 li a {
-  display: block;
-  padding: 25px 50px 25px 25px;
-  border-top: 1px solid #eee;
-  position: relative;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
-}
-
-.miniFAQ2 li a i {
+.miniFAQ2 li i {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -283,37 +268,9 @@ a {
   top: 25px;
 }
 
-.miniFAQ2 li a i span.bar1 {
-  top: 8px;
-  left: 0;
-}
-
-.miniFAQ2 li a i span.bar2 {
-  transform: rotate(90deg);
-  left: 0;
-  top: 8px;
-}
-
-.miniFAQ2 li a i span {
-  display: inline-block;
-  width: 16px;
-  height: 2px;
-  border-radius: 2px;
-  background: #444;
-  position: absolute;
-}
-
 .miniFAQ2 li .answer {
-  display: none;
   padding: 10px 15px 15px 35px;
-  margin: 0 10px 10px;
-  background: #f5f5f5;
-  border-radius: 6px;
-}
-
-.miniFAQ2 li .answer i {
-  float: left;
-  margin-left: -20px;
-  font-style: normal;
-  font-weight: 600;
+  margin: 0 -15px -15px;
+  background: #ddc2f3;
+  border-radius: 50px;
 }
