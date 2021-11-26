@@ -3,6 +3,14 @@
   --curve: 40;
 }
 
+@font-face {
+  font-family: "Cafe24Ohsquare";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* * {
   box-sizing: border-box;
 }
@@ -142,4 +150,42 @@ body {
   letter-spacing: -0.5px;
   box-sizing: border-box;
   display: block;
+}
+
+.programALL {
+  padding: 25px 15px;
+  min-height: 880px px;
+}
+
+h3 {
+  color: #123;
+  font-size: 32px;
+  font-family: Cafe24Ohsquare_air;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+h3 span {
+  display: block;
+}
+
+h3 b {
+  font-family: Cafe24Ohsquare;
+}
+
+.prmmid {
+  padding: 15px 0;
+}
+
+.prmmid h4 {
+  font-family: Cafe24Ohsquare;
+  font-size: 20px;
+  margin: 0 15px 5px;
+  color: #111;
+}
+
+.prmmid p {
+  color: rgb(40, 212, 126);
+  font-size: 13px;
+  margin: 0 15px 5px;
 }

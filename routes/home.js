@@ -8,11 +8,19 @@ router.get('/', function(req, res){
 });
 
 router.get('/onlinept', function(req, res){
-  res.render('home/first');
+  res.render('home/making');
 });
 
-router.get('/onlinept/practice', function(req, res){
+router.get('/onlinept/makingone', function(req, res){
   res.render('home/firstone');
+});
+
+router.get('/onlinept/makingtwo', function(req, res){
+  res.render('home/firsttwo');
+});
+
+router.get('/onlinept/makingthree', function(req, res){
+  res.render('home/firstthree');
 });
 
 // Login
