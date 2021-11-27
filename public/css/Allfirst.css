@@ -53,8 +53,121 @@ body {
   opacity: 1;
 } */
 
+.halfdiv .programDetailBox {
+  float: left;
+  width: 50%;
+}
+
+.halfdiv .programHeader {
+  float: right;
+  width: 50%;
+}
+
 .programDetailBox {
   order: -1;
+}
+
+.programHeader {
+  padding: 20px 0;
+  position: sticky;
+  top: 80px;
+}
+
+.programHeader .price {
+  margin-top: 10px;
+}
+
+.programHeader .box {
+  border: 1px solid #eee;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  margin: 0 0 20px;
+  padding: 25px;
+}
+
+.programHeader .price .discountedprice strong {
+  display: block;
+}
+
+.programHeader .price strong {
+  font-size: 12px;
+  font-weight: 600;
+  color: #123;
+}
+
+.programHeader .price .discountedprice .discountrate {
+  color: #e32438;
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.programHeader .price .discountedprice .price {
+  margin: 0 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #123;
+  letter-spacing: -0.5px;
+}
+
+.programHeader .price .discountedprice .orgprice {
+  font-size: 14px;
+  font-weight: 600;
+  color: #999;
+}
+
+.programHeader .price .discountedprice .price small {
+  font-weight: 600;
+}
+
+.programHeader .price .remaining {
+  margin: 10px 0 20px;
+}
+
+.programHeader .price .remaining .remain {
+  background: #f5f3ff;
+  color: #7266d3;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 10px;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.programHeader .price .remaining .remain span {
+  font-weight: 800;
+}
+
+.programHeader .price dl {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.programHeader .price dl dt {
+  float: left;
+}
+
+.programHeader .price dl dd {
+  text-align: right;
+  color: #888;
+  margin: 18px 0;
+}
+
+.programHeader .price dl dd b {
+  color: #444;
+}
+
+.programHeader .price .purchase {
+  border-radius: 4px;
+  height: 48px;
+  line-height: 48px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  background: #123;
+  color: #fff;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-weight: 800;
 }
 
 .programTitleBox {
