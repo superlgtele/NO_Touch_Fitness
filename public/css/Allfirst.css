@@ -374,7 +374,7 @@ h4.face {
 
 .inside-page__heading--ski,
 .card-front__text-view--ski {
-  color: #5547d7;
+  color: #7266d3;
 }
 
 /* Front cover */
@@ -399,7 +399,7 @@ h4.face {
 /* Icons ===========================================*/
 
 .card-front__icon {
-  fill: #fafbfa;
+  fill: #fafafb;
   font-size: 3vw;
   height: 3.25rem;
   margin-top: -0.5rem;
@@ -540,7 +540,7 @@ h4.face {
 
 /* container for the front side */
 .card-front {
-  background-color: #fafbfa;
+  background-color: #ffffff;
   height: 15rem;
   width: 15rem;
 }
@@ -557,7 +557,7 @@ h4.face {
 }
 
 .card-front__tp--ski {
-  background: linear-gradient(to bottom, #279eb2, #5547d7);
+  background: linear-gradient(to bottom, #ffffff, #5547d7);
 }
 
 /* Front card's bottom section */
