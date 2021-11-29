@@ -576,11 +576,12 @@ h4.face {
 
 /* Specifically targeting the <video> element */
 .video__container {
-  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%); */
   height: auto;
   min-height: 100%;
   object-fit: cover;
-  width: 100%;
+  width: 200%;
 }
 
 /* Inside page */
