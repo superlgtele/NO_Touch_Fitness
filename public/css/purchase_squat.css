@@ -182,3 +182,11 @@ body {
     opacity: 1;
   }
 }
+
+.titles {
+  background: linear-gradient(to right, #ffa7a3, #5673bd);
+  padding: 0.43em 1em;
+  font-size: 19px;
+  border-radius: 3px;
+  color: #ffffff;
+}
