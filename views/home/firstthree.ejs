@@ -9,10 +9,7 @@
       <body>
         <%- include('../partials/nav') %>
         
-          <!-- <div class="containers">
-          <img src="/imgs/a8.png" alt="A8" />
-          <img src="/imgs/a7.png" alt="A7" />
-          </div> -->
+        <!-- <div class="halfdiv"> -->
 
           <div class="programHeader">
             <div class="box price">
@@ -20,15 +17,15 @@
                 <strong>할인가</strong>
                 <em class="discountrate">50%</em>
                 <span class="price">
-                  <span class="commify">50,000</span>
+                  <span class="commify">35,000</span>
                   <small>원</small>
                 </span>  
-                <del class="orgprice commify">100,000</del>
+                <del class="orgprice commify">70,000</del>
               </div>
               <div class="remaining">
                 <span class="remain">
                   남은자리
-                  <span class="commify">0</span>
+                  <span class="commify">6</span>
                 </span>
               </div>
               <dl>
@@ -43,9 +40,69 @@
               </dl>
               <a class="purchase" href="/onlinept/purchase">신청하기</a>
             </div>
-          </div>
+      
+           <!-- ---여기서부터 아래 코딩은 동영상 첨부하는 카드기능--- -->
+           <main class="main">
+        
+            <section class="card-area">
+    
+                <!-- Card: 턱걸이 -->
+                <section class="card-section">
+                    <div class="card">
+                        <div class="flip-card">
+                            <div class="flip-card__container">
+                                <div class="card-front">
+                                    <div class="card-front__tp card-front__tp--ski">
+                                      <!-- <img src="/imgs/b1.png" alt="B1" /> -->
+                                        
+                                        <h2 class="card-front__heading">
+                                            턱걸이 담당
+                                        </h2>
+                                        <p class="card-front__text-price">
+                                            코치 운동영상
+                                        </p>
+                                    </div>
+    
+                                    <div class="card-front__bt">
+                                        <p class="card-front__text-view card-front__text-view--ski">
+                                            감상해주세요^^
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="card-back">
+                                    <video class="video__container" autoplay muted loop>
+                                        <!-- <source class="video__media" src="https://player.vimeo.com/external/195913085.sd.mp4?s=7c12f7a83de62a8900fd2ae049297070b9bc8a54&profile_id=164&oauth2_token_id=574477611" type="video/mp4"> -->
+                                        <source class="video__media" src="/imgs/joongbu.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="inside-page">
+                            <div class="inside-page__container">
+                                <h3 class="inside-page__heading inside-page__heading--ski">
+                                    <!-- 턱걸이 -->
+                                </h3>
+                                <p class="inside-page__text">
+                                   <!-- 이곳에는 운동하는 영상을 첨부할 계획입니다 ^^ -->
+                                </p>
+                                <!-- <a href="#" class="inside-page__btn inside-page__btn--ski">View deals</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
   
-          <!-- --------윗부분의 코드는 pricebox, 밑부분의 코드는 detail form-------- -->
+            </section>
+            <!-- <footer class="footer">
+                <p class="footer-text">&copy; 2021 Created by Maza designDev</p>
+            </footer> -->
+          </main>
+          <!-- ---여기까지 동영상 첨부된 카드 기능이고 pricebox는 카드div 윗쪽에 코딩되어있음!--- -->
+
+        </div>
+
+        <!-- --------윗부분의 코드는 pricebox, 밑부분의 코드는 detail form-------- -->
 
           <div class="col-lg-7 programDetailBox">
 
