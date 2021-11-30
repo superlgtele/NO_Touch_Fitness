@@ -23,8 +23,8 @@ router.get('/onlinept/makingthree', function(req, res){
   res.render('home/firstthree');
 });
 
-router.get('/onlinept/purchase', function(req, res){
-  res.render('home/purchase');
+router.get('/onlinept/purchase_squat', function(req, res){
+  res.render('home/purchase_squat');
 })
 
 // Login

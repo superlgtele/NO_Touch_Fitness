@@ -7,6 +7,9 @@ const session = require('express-session');
 const passport = require('./config/passport');
 const app = express();
 const util = require('./util');
+const https = require('https');
+const path = require('path');
+const fs = require('fs');
 
 // DB setting
 const db = mongoose.connection;
@@ -46,7 +49,14 @@ app.use('/users', require('./routes/users'));
 app.use('/comments', util.getPostQueryString, require('./routes/comments'));
 
 // Port setting
-const port = 3000;
-app.listen(port, function(){
-  console.log('server on! http://localhost:'+port);
-});
+// const port = 3000;
+// app.listen(port, function(){
+//   console.log('server on! http://localhost:'+port);
+// });
+
+const sslServer = https.createServer({
+  key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem'))
+}, app)
+
+sslServer.listen(3000, () => console.log('Secure server 🎊 on port 3000(주소앞에 https:// 추가해주어야 합니다!)'));
