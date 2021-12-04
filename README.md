@@ -26,18 +26,13 @@
 
 <img src="https://user-images.githubusercontent.com/80046326/144703176-7ea92a6e-2658-466e-ba91-8704785daa6b.PNG" align="left" alt="onlinept" style="zoom:40%;" />
 
-:dancing_women: 온라인PT 페이지로, 보라색박스에 마우스를 올리면 자동으로 운동 영상이 재생되고 신청하기를 클릭하면 
-
-​      머신러닝 페이지로 넘어갑니다.
+:dancing_women: 온라인PT 페이지로, 보라색박스에 마우스를 올리면 자동으로 운동 영상이 재생되고 신청하기를 클릭하면 머신러닝 페이지로 넘어갑니다.
 
 <br>
 
 
 
-<img src="https://user-images.githubusercontent.com/80046326/144703312-eafd7bb2-ff84-4292-9421-4143f02d7292.PNG" align="left" alt="posemodel" style="zoom:200%;" />
+<img src="https://user-images.githubusercontent.com/80046326/144703312-eafd7bb2-ff84-4292-9421-4143f02d7292.PNG" align="left" alt="posemodel" style="zoom:100%;" />
 
-:camera: Google Teachable Machine 도움을 받아서 운동 자세를 컴퓨터에 학습시켜, 고객의 정확한 
+:camera: Google Teachable Machine 도움을 받아서 운동 자세를 컴퓨터에 학습시켜, 고객의 정확한 운동 자세를 분석할 수 있도록 노력중입니다^^
 
-​      운동 자세를 분석할 수 있도록 노력중입니다^^
-
-<br>
