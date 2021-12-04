@@ -6,9 +6,21 @@
 
 
 
+
+
+
+
+
+
 :house: 홈, 게시판, 온라인PT, 회원가입, 로그인 페이지가 있습니다.
 
 <img src="https://user-images.githubusercontent.com/80046326/144702752-a254484f-7651-4d84-8ca3-4073055717c8.PNG" align="left" alt="home" style= "zoom:50%;" />
+
+
+
+
+
+
 
 
 
@@ -18,9 +30,21 @@
 
 
 
+
+
+
+
+
+
 :dancing_women: 온라인PT페이지로 보라색박스에 마우스를 올리면 자동으로 운동 영상이 재생되고, 신청하기를 클릭하면 pose 페이지로 넘어갑니다.
 
 <img src="https://user-images.githubusercontent.com/80046326/144703176-7ea92a6e-2658-466e-ba91-8704785daa6b.PNG" align="left" alt="onlinept" style="zoom:40%;" />
+
+
+
+
+
+
 
 
 
