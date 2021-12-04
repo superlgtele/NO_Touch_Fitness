@@ -34,7 +34,7 @@
 
 
 
-<img src="https://user-images.githubusercontent.com/80046326/144703312-eafd7bb2-ff84-4292-9421-4143f02d7292.PNG" align="left" alt="posemodel" style="zoom:130%;" />
+<img src="https://user-images.githubusercontent.com/80046326/144703312-eafd7bb2-ff84-4292-9421-4143f02d7292.PNG" align="left" alt="posemodel" style="zoom:200%;" />
 
 :camera: Google Teachable Machine 도움을 받아서 운동 자세를 컴퓨터에 학습시켜, 고객의 정확한 
 
