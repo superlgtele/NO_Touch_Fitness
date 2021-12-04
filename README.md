@@ -39,3 +39,5 @@
 :camera: Google Teachable Machine 도움을 받아서 운동 자세를 컴퓨터에 학습시켜, 고객의 정확한 
 
 ​      운동 자세를 분석할 수 있도록 노력중입니다^^
+
+<br>
