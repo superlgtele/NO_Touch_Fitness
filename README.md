@@ -34,5 +34,14 @@
 
 <img src="https://user-images.githubusercontent.com/80046326/144703312-eafd7bb2-ff84-4292-9421-4143f02d7292.PNG" align="left" alt="posemodel" style="zoom:100%;" />
 
-:camera: Google Teachable Machine 도움을 받아서 운동 자세를 컴퓨터에 학습시켜, 고객의 정확한 운동 자세를 분석할 수 있도록 노력중입니다^^
+:camera: Google Teachable Machine 
 
+<br>
+
+
+
+<img src="https://user-images.githubusercontent.com/80046326/145131846-a4395bca-c6a0-4118-9208-ab32d823f150.PNG" align="left" alt="Teachable" style="zoom:50%;" />
+
+:surfing_man: 스쿼트 머신러닝 페이지로, start 버튼을 클릭하면 카메라가 켜집니다.
+
+정확한 자세로 스쿼트를 할 때마다 스쿼트 카운터가 1씩 증가합니다.
