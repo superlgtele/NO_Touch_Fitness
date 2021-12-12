@@ -70,10 +70,10 @@ userSchema.path('password').validate(function(v) {
   // update user
   if(!user.isNew){
     if(!user.currentPassword){
-      user.invalidate('currentPassword', 'Current Password is required!');
+      user.invalidate('currentPassword', '비밀번호를 입력해주세요!');
     }
     else if(!bcrypt.compareSync(user.currentPassword, user.originalPassword)){
-      user.invalidate('currentPassword', 'Current Password is invalid!');
+      user.invalidate('currentPassword', '비밀번호가 틀렸습니다!');
     }
 
     if(user.newPassword && !passwordRegex.test(user.newPassword)){
