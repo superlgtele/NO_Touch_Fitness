@@ -27,6 +27,18 @@ router.get('/onlinept/purchase_squat', function(req, res){
   res.render('home/purchase_squat');
 })
 
+router.get('/onlinept/purchase_one', function(req, res){
+  res.render('home/purchase_one');
+})
+
+router.get('/onlinept/purchase_two', function(req, res){
+  res.render('home/purchase_two');
+})
+
+router.get('/onlinept/purchase_three', function(req, res){
+  res.render('home/purchase_three');
+})
+
 // Login
 router.get('/login', function (req,res) {
   var username = req.flash('username')[0];
