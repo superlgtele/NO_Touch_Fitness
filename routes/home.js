@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('../config/passport');
+const util = {};
 
 // Home
 router.get('/', function(req, res){
@@ -25,19 +26,50 @@ router.get('/onlinept/makingthree', function(req, res){
 
 router.get('/onlinept/purchase_squat', function(req, res){
   res.render('home/purchase_squat');
-})
+});
+
+util.isLoggedin = function(req, res, next){
+  if(req.isAuthenticated()){
+    next();
+  }
+  else {
+    req.flash('errors', {login:'로그인을 먼저 해주세요!'});
+    res.redirect('/login');
+  }
+}
 
 router.get('/onlinept/purchase_one', function(req, res){
+
+  // Need update ejs
+
+  // if(req.isAuthenticated()){
+  //   res.render('home/purchase_one')
+  // } else {
+  //   req.flash('errors', {login:'로그인을 먼저 해주세요!'});
+  //   res.redirect('/login');
+  // }
+
   res.render('home/purchase_one');
-})
+
+});
 
 router.get('/onlinept/purchase_two', function(req, res){
-  res.render('home/purchase_two');
-})
+  if(req.isAuthenticated()){
+    res.render('home/purchase_two')
+  } else {
+    req.flash('errors', {login:'로그인을 먼저 해주세요!'});
+    res.redirect('/login');
+  }
+});
 
 router.get('/onlinept/purchase_three', function(req, res){
-  res.render('home/purchase_three');
-})
+  if(req.isAuthenticated()){
+    res.render('home/purchase_three')
+  } else {
+    req.flash('errors', {login:'로그인을 먼저 해주세요!'});
+    res.redirect('/login');
+  }
+});
 
 // Login
 router.get('/login', function (req,res) {
