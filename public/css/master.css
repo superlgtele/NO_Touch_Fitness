@@ -87,7 +87,7 @@ body {
 #간단한소개 {
   height: 400px;
   padding: 120px;
-  background-color: #a0a0a0;
+  background-color: #665e5e;
   color: white;
 }
 
@@ -131,7 +131,7 @@ body {
 
 .whyset {
   display: flex;
-  background-color: #828282;
+  background-color: #665e5e;
   color: whitesmoke;
   margin: 30px 0;
 }
