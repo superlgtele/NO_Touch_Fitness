@@ -44,6 +44,9 @@ body {
   border-radius: 4px;
   margin: 0 0 20px;
   padding: 25px;
+  position: fixed;
+  top: 400px;
+  width: 510px;
 }
 
 .programHeader .price .discountedprice strong {
@@ -460,7 +463,7 @@ h4.face {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
 }
 
