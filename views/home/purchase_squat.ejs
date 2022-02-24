@@ -18,18 +18,19 @@
     <div>
       <canvas id="canvas"></canvas>
     </div>
+
     <div id="label-container"></div>
 
     <div class="frame">
       <div>
         <div class="headline">
-          <div>스쿼트<br />카운터</div>
+          <div>스쿼트 카운터</div>
         </div>
         <!--  -->
         <div class="circle-big">
           <div class="text">
             <!-- 28<div class="hits">개</div> -->
-            <span id="Counter" class="counter">0</span>번.
+            <span id="Counter" class="counter">0</span>번
           </div>
           <svg>
             <circle class="bg" cx="57" cy="57" r="52"></circle>
@@ -91,7 +92,7 @@
       }
 
       // 4. 모델의 불러와서 결과를 뽑아낸 다음 클래스이름과 가능성을 문장으로 만들어서 html에 넣어준다.
-      var status = "stand";
+      var status = "STAND";
       var count = 0;
       async function predict() {
         // Prediction #1: run input through posenet
@@ -105,21 +106,21 @@
         // prediction[1] = 스쿼트 자세 -> squat
         // prediction[2] = 구부정한 자세 -> bent
         if (prediction[0].probability.toFixed(2) > 0.9) {
-          if (status == "squat") {
+          if (status == "SQUAT") {
             count++;
             counterUp();
             var audio = new Audio("/mp3/" + (count % 10) + ".mp3");
             audio.play();
           }
-          status = "stand";
+          status = "STAND";
         } else if (prediction[1].probability.toFixed(2) > 0.9) {
-          status = "squat";
+          status = "SQUAT";
         } else if (prediction[2].probability.toFixed(2) > 0.9) {
-          if (status == "squat" || status == "stand") {
+          if (status == "SQUAT" || status == "STAND") {
             var audio = new Audio("/mp3/bent.mp3");
             audio.play();
           }
-          status = "bent";
+          status = "BENT";
         }
         //
 
