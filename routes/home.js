@@ -8,6 +8,10 @@ router.get("/", function (req, res) {
   res.render("home/welcome");
 });
 
+router.get("/socket", function (req, res) {
+  res.render("home/socket");
+});
+
 router.get("/onlinept", function (req, res) {
   res.render("home/making");
 });

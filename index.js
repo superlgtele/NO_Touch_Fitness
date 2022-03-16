@@ -62,8 +62,20 @@ const sslServer = https.createServer(
   app
 );
 
+const { Server } = require("socket.io");
+const io = new Server(sslServer);
+//http와 https가 겹쳐서 실행이 안됨..
+
 sslServer.listen(3000, () =>
   console.log(
     "Secure server 🎊 on port 3000(주소앞에 https:// 추가해주어야 합니다!)"
   )
 );
+
+io.on("connection", function (socket) {
+  console.log("접속완료");
+  socket.on("user-send", function (data) {
+    console.log(data);
+    io.emit("response", data);
+  });
+});
