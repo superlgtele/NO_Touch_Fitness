@@ -13,14 +13,25 @@
     <input id="inputtext" />
     <div id="content"></div>
     <button id="send">Send Message</button>
+    <button id="room1">채팅방1 입장</button>
+    <button id="room1-send">채팅방1에서 메세지보내기</button>
 
     <script>
       const socket = io();
+
+      $("#room1-send").click(function () {
+        socket.emit("room1-send", "반가워 채팅방1");
+      });
+
+      $("#room1").click(function () {
+        socket.emit("joinroom");
+      });
+
       $("#send").click(function () {
         socket.emit("user-send", $("#inputtext").val());
       });
 
-      socket.on("response", function (data) {
+      socket.on("broadcast", function (data) {
         $("#content").append("<div>" + data + "<div>");
       });
     </script>
