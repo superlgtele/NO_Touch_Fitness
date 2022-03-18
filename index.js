@@ -87,3 +87,10 @@ io.on("connection", function (socket) {
     io.emit("broadcast", data);
   });
 });
+
+// io.on ---> 웹소켓 접속
+// 클라이언트에서 보낸 데이터 수신 ---> socket.on(작명, 콜백함수)
+// 서버에서 클라이언트로 메세지 보내기 ---> io.emit(작명, 데이터)
+// io.emit(작명, 데이터) ---> 모든 유저에게 메세지 보냄
+// io.to(목적지).emit() ---> 특정 유저에게 메세지 보냄
+// socket.join(방이름) ---> 채팅방 생성 + 입장

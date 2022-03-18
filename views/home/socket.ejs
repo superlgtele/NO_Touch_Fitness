@@ -34,6 +34,10 @@
       socket.on("broadcast", function (data) {
         $("#content").append("<div>" + data + "<div>");
       });
+
+      // io() ---> 웹소켓 접속
+      // socket.emit(작명, 데이터) ---> 서버에게 웹소켓으로 메세지 보내기
+      // 서버에서 보낸 데이터 수신 ---> socket.on(작명, 콜백함수)
     </script>
   </body>
 </html>
