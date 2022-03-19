@@ -10,29 +10,24 @@
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
 
-    <input id="inputtext" />
-    <div id="content"></div>
-    <button id="send">Send Message</button>
+    <input id="roomchat" />
+    <div id="plusroomchat"></div>
     <button id="room1">채팅방1 입장</button>
     <button id="room1-send">채팅방1에서 메세지보내기</button>
 
     <script>
       const socket = io();
 
-      $("#room1-send").click(function () {
-        socket.emit("room1-send", "반가워 채팅방1");
-      });
-
       $("#room1").click(function () {
         socket.emit("joinroom");
       });
 
-      $("#send").click(function () {
-        socket.emit("user-send", $("#inputtext").val());
+      $("#room1-send").click(function () {
+        socket.emit("room1-send", $("#roomchat").val());
       });
 
       socket.on("broadcast", function (data) {
-        $("#content").append("<div>" + data + "<div>");
+        $("#plusroomchat").append("<div>" + data + "<div>");
       });
 
       // io() ---> 웹소켓 접속
