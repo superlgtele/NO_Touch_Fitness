@@ -88,3 +88,5 @@ io.on("connection", function (socket) {
 // io.emit(작명, 데이터) ---> 모든 유저에게 메세지 보냄
 // io.to(목적지).emit() ---> 특정 유저에게 메세지 보냄
 // socket.join(방이름) ---> 채팅방 생성 + 입장
+
+// io.to(socket.id), Database
