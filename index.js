@@ -73,6 +73,7 @@ sslServer.listen(3000, () =>
 );
 
 io.on("connection", function (socket) {
+  // console.log(socket.id);
   socket.on("joinroom", function (data) {
     socket.join("room1");
   });

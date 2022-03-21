@@ -1,0 +1,10 @@
+#userid {
+  width: 100px;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+#roomchat {
+  width: 200px;
+  background-color: skyblue;
+}
