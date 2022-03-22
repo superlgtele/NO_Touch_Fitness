@@ -11,8 +11,8 @@
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
 
-    <!-- <input id="userid" />
-    <br /> -->
+    <input id="userid" />
+    <br />
     <input id="roomchat" />
     <div id="plusroomchat"></div>
     <button id="room1">채팅방1 입장</button>
@@ -26,11 +26,17 @@
       });
 
       $("#room1-send").click(function () {
-        socket.emit("room1-send", $("#roomchat").val());
+        const userdata = {
+          name: $("#userid").val(),
+          msg: $("#roomchat").val(),
+        };
+        socket.emit("room1-send", userdata);
       });
 
       socket.on("broadcast", function (data) {
-        $("#plusroomchat").append("<div>" + data + "<div>");
+        $("#plusroomchat").append(
+          "<div>" + data.name + "님 - " + data.msg + "<div>"
+        );
       });
 
       // io() ---> 웹소켓 접속
