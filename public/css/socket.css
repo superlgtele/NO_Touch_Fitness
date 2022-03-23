@@ -1,10 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.user-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #a9bdce;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.display-container {
+  flex: 12;
+  background: #b2c7d9;
+  overflow-y: scroll;
+}
+
+.input-container {
+  flex: 2;
+}
+
 #userid {
   width: 100px;
-  background-color: yellow;
-  border-radius: 10px;
+  border-radius: 7px;
+  border: none;
 }
 
 #roomchat {
   width: 200px;
-  background-color: skyblue;
 }
