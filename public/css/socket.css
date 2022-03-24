@@ -32,7 +32,16 @@ body {
 }
 
 .input-container {
-  flex: 2;
+  flex: 1;
+}
+
+.user-data {
+  width: 90%;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 0.5rem;
 }
 
 #userid {
@@ -42,5 +51,21 @@ body {
 }
 
 #roomchat {
-  width: 200px;
+  font-size: 12px;
+  height: 90%;
+  width: 60%;
+  border: none;
+}
+
+#room1 {
+  width: 17%;
+  height: 90%;
+  border-radius: 5px;
+}
+
+#room1-send {
+  width: 17%;
+  height: 90%;
+  border-radius: 5px;
+  background: #ffeb33;
 }

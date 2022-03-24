@@ -21,7 +21,7 @@
       <div class="input-container">
         <input id="roomchat" />
         <button id="room1">채팅방1 입장</button>
-        <button id="room1-send">채팅방1에서 메세지보내기</button>
+        <button id="room1-send">메세지보내기</button>
       </div>
     </div>
 
@@ -42,7 +42,7 @@
 
       socket.on("broadcast", function (data) {
         $("#plusroomchat").append(
-          "<div>" + data.name + "님 - " + data.msg + "<div>"
+          "<div class=user-data>" + data.name + "님 - " + data.msg + "<div>"
         );
       });
 
