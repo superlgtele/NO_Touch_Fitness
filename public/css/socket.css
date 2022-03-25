@@ -45,8 +45,9 @@ body {
 }
 
 #userid {
-  width: 100px;
-  border-radius: 7px;
+  width: 20%;
+  height: 50%;
+  border-radius: 5px;
   border: none;
 }
 
