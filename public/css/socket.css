@@ -8,6 +8,7 @@ body {
   height: 100%;
 }
 
+/* 전체틀 */
 .wrapper {
   height: 100%;
   width: 100%;
@@ -16,6 +17,7 @@ body {
   overflow: hidden;
 }
 
+/* 유저닉인풋 감싸는 틀 */
 .user-container {
   display: flex;
   justify-content: flex-start;
@@ -25,16 +27,19 @@ body {
   padding: 0.5rem;
 }
 
+/* 입력된채팅보여주는 틀 */
 .display-container {
   flex: 12;
   background: #b2c7d9;
   overflow-y: scroll;
 }
 
+/* Footer */
 .input-container {
   flex: 1;
 }
 
+/* 유저채팅틀 */
 .user-data {
   width: 90%;
   padding: 0.3rem;
@@ -44,6 +49,7 @@ body {
   margin-top: 0.5rem;
 }
 
+/* 유저닉인풋 */
 #userid {
   width: 20%;
   height: 50%;
@@ -51,6 +57,7 @@ body {
   border: none;
 }
 
+/* 채팅입력틀 */
 #roomchat {
   font-size: 12px;
   height: 90%;
