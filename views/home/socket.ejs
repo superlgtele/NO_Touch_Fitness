@@ -8,47 +8,24 @@
     <title>Socket</title>
   </head>
   <body>
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
 
     <div class="wrapper">
       <div class="user-container">
-        <input id="userid" />
+        <label for="nickname">닉네임</label>
+        <input type="text" id="nickname" />
       </div>
       <div class="display-container">
-        <div id="plusroomchat"></div>
+        <ul class="chatting-list"></ul>
       </div>
       <div class="input-container">
-        <input id="roomchat" />
-        <button id="room1">채팅방1 입장</button>
-        <button id="room1-send">메세지보내기</button>
+        <span>
+          <input type="text" class="chatting-input" />
+          <button class="send-button">전송</button>
+        </span>
       </div>
     </div>
-
-    <script>
-      const socket = io();
-
-      $("#room1").click(function () {
-        socket.emit("joinroom");
-      });
-
-      $("#room1-send").click(function () {
-        const userdata = {
-          name: $("#userid").val(),
-          msg: $("#roomchat").val(),
-        };
-        socket.emit("room1-send", userdata);
-      });
-
-      socket.on("broadcast", function (data) {
-        $("#plusroomchat").append(
-          "<div class=user-data>" + data.name + "님 - " + data.msg + "<div>"
-        );
-      });
-
-      // io() ---> 웹소켓 접속
-      // socket.emit(작명, 데이터) ---> 서버에게 웹소켓으로 메세지 보내기
-      // 서버에서 보낸 데이터 수신 ---> socket.on(작명, 콜백함수)
-    </script>
+    <script src="/js/chat.js"></script>
   </body>
 </html>

@@ -73,16 +73,27 @@ sslServer.listen(3000, () =>
 );
 
 io.on("connection", function (socket) {
-  // console.log(socket.id);
-  socket.on("joinroom", function (data) {
-    socket.join("room1");
-  });
-
-  socket.on("room1-send", function (data) {
-    io.to("room1").emit("broadcast", data);
+  socket.on("chatting", (data) => {
+    const { name, msg } = data;
+    io.emit("chatting", {
+      name,
+      msg,
+      time: new Date().getHours() + "시 " + new Date().getMinutes() + "분",
+    });
   });
 });
 
+// io.on("connection", function (socket) {
+//   socket.on("joinroom", function (data) {
+//     socket.join("room1");
+//   });
+
+//   socket.on("room1-send", function (data) {
+//     io.to("room1").emit("broadcast", data);
+//   });
+// });
+
+// --- Server 역할 ---
 // io.on ---> 웹소켓 접속
 // 클라이언트에서 보낸 데이터 수신 ---> socket.on(작명, 콜백함수)
 // 서버에서 클라이언트로 메세지 보내기 ---> io.emit(작명, 데이터)
@@ -90,4 +101,7 @@ io.on("connection", function (socket) {
 // io.to(목적지).emit() ---> 특정 유저에게 메세지 보냄
 // socket.join(방이름) ---> 채팅방 생성 + 입장
 
-// io.to(socket.id), User(클라이언트) 구분부터 해야됨
+// --- Client 역할 ---
+// io() ---> 웹소켓 접속
+// socket.emit(작명, 데이터) ---> 서버에게 웹소켓으로 메세지 보내기
+// 서버에서 보낸 데이터 수신 ---> socket.on(작명, 콜백함수)
